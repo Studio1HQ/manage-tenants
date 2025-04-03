@@ -4,7 +4,7 @@ import { PERMITIO_SDK } from '@/lib/permitio';
 import { RESEND_SDK } from '@/lib/resend';
 import { properties } from '@/properties';
 
-const defaultAddress = 'customermail2020@gmail.com';
+const defaultAddress = process.env.DEFAULT_EMAIL || '';
 
 export type PermissionType = 'move-out-checklist' | 'deposit-details';
 
